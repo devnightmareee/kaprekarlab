@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaprekarlab"
+version = "0.2.0"
+description = "Toolkit for Kaprekar numbers and the Kaprekar routine (6174): education, testing, experiments, visualisation"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Parsa Daryabar (dev_nightmare)" }]
+keywords = ["kaprekar", "6174", "number-theory", "education", "recreational-mathematics"]
+
+[project.urls]
+Homepage = "https://github.com/devnightmareee/kaprekarlab"
+Issues = "https://github.com/devnightmareee/kaprekarlab/issues"
+
+[project.scripts]
+kaprekarlab = "kaprekarlab.cli:main"
+
+[tool.setuptools]
+packages = ["kaprekarlab"]
